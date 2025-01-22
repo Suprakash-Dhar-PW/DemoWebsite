@@ -1,80 +1,15 @@
-/* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    /* color: white; */
 }
 
-/* Body Styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #121212; /* Dark background for the dark theme */
-    color: white;
+body{
+    background-color: #121212;
     line-height: 1.6;
 }
 
-/* Header Styling */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
-    border-bottom: 3px solid #444;
-}
-
-header .logo {
-    height: 50px;
-}
-
-header div {
-    display: flex;
-    gap: 20px;
-}
-
-header .winterwear,
-header .topwear,
-header .bottomwear {
-    font-size: 16px;
-    color: white;
-    cursor: pointer;
-}
-
-header .winterwear:hover,
-header .topwear:hover,
-header .bottomwear:hover {
-    color: #ff9800; /* A bright color for hover effect */
-}
-
-header form {
-    display: flex;
-    align-items: center;
-}
-
-header .search2 {
-    color: white;
-    font-size: 16px;
-}
-
-header .bi-search {
-    font-size: 20px;
-    color: white;
-}
-
-header .search {
-    padding: 5px 10px;
-    margin-left: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #444;
-    color: white;
-}
-
-header .bi-cart-fill {
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-}
 
 /* Main Section Styling */
 main {
@@ -88,17 +23,47 @@ main {
     font-style: italic;
 }
 
-/* Slideshow Styling */
+.option{
+    display: flex;
+    flex-direction: row;
+}
+
+header .winterwear,
+header .topwear,
+header .bottomwear, 
+header .bestseller,
+header .footwear,
+header .accessories{
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    height: 20px;
+    margin-top: 30px;
+}
+
+header .winterwear:hover,
+header .topwear:hover,
+header .bottomwear:hover,
+header .bestseller:hover, 
+header .footwear:hover,
+header .accessories:hover {
+    color: #ff9800;
+}
+
+.bi-chevron-down{
+    font-size: 12px;
+    
+}
+
 .slideshow-container {
     position: relative;
     max-width: 100%;
-    margin-top: 20px;
+    margin: auto;
 }
 
 .slides {
     display: none;
     width: 100%;
-    height: auto;
 }
 
 .slides img {
@@ -106,83 +71,113 @@ main {
     height: auto;
 }
 
+.fade {
+    animation: fade 1.5s ease-in-out;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .prev, .next {
     position: absolute;
     top: 50%;
-    padding: 16px;
-    color: white;
     font-size: 18px;
-    font-weight: bold;
+    color: white;
     background-color: rgba(0, 0, 0, 0.5);
-    border: none;
+    padding: 10px;
     cursor: pointer;
-    border-radius: 50%;
     user-select: none;
     transform: translateY(-50%);
 }
 
 .prev {
-    left: 10px;
+    left: 0;
 }
 
 .next {
-    right: 10px;
+    right: 0;
 }
 
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Footer Styling */
-footer {
-    background-color: #333;
+
+header {
+    /* border: 1px solid red; */
+    background-color:  #333;;
+    display: flex;
+    flex-direction: row;
+    /* background-image: url(Photos/LoGOOOOOOOOOOOOOOO.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    position: sticky;
+    top: 0px;
+}
+.down{
+    height: 400px; 
+    overflow: hidden;
+    background-color: black;
+}
+
+.logo {
+    /* border: 2px solid red; */
+    background-image: url(Photos);
+    height:120px;
+    margin-top: -20px;
+    width: 200px;
+    /* background-color: blueviolet; */
+    
+}
+.search{
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
     color: white;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+
+    
 }
 
-/* Responsive Styling */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    header div {
-        flex-direction: column;
-    }
-
-    .search {
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .slideshow-container {
-        width: 100%;
-    }
-
-    .prev, .next {
-        top: 10%;
-        font-size: 14px;
-    }
+.search10{
+    margin-top: 29px;
+    margin-left: 20px;
 }
 
-@media (max-width: 480px) {
-    .search2 {
-        font-size: 14px;
-    }
-
-    .winterwear, .topwear, .bottomwear {
-        font-size: 14px;
-    }
+.bi-search{
+    font-size: 15px;
+    color: white;
+}
+.search2{
+    color: white;
+    /* border: 2px solid green; */
+    font-size: 16px;
 }
 
-/* Logo Styling */
-header .logo {
-    height: 100px; /* Adjust this value to make the logo bigger or smaller */
-    width: auto; /* Keep the aspect ratio intact */
+.moto{
+    
+    /* border: 1px solid black; */
+    width: 480px;  
+}
+marquee{
+    color: white;
+    font-weight: bold;
 }
 
+.bi-cart-fill{
+    color: white;
+}
+
+p{
+    /* border: 1px solid green; */
+    width: 524px;
+    
+}

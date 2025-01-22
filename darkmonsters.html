@@ -7,59 +7,61 @@
     <title>Dark Monsters</title>
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Photos/DARK MONSTERWebLogooooo.svg">
 </head>
 
 <body>
     <header>
-        <!-- Logo Section -->
-        <img src="Photos/IAMDONE.gif" alt="Error" class="logo" >
-        
-        <div class="header-links">
-            <div class="winterwear">
-                Winterwear <span class=""></span>
-            </div>
-            <div class="topwear">
-                Topwear <span class=""></span>
-            </div>
-            <div class="bottomwear">
-                Bottomwear <span class=""></span>
-            </div>
-        </div>
 
-        <!-- Search Form Section -->
-        <form action="">
-            <span class="search2">Search</span>&nbsp;<span class="bi bi-search"></span>&nbsp;
-            <input type="text" name="txtSearch" placeholder="HUNT" class="search">
+        <img src="Photos/IAMDONE.gif" alt="Error" class="logo">
+
+        <form action="" class="option">
+            &nbsp;&nbsp;&nbsp;&nbsp;<div class="winterwear">Winterwear&nbsp;<span class="bi bi-chevron-down"></span>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="topwear">Topwear&nbsp;<span class="bi bi-chevron-down"></span>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="bottomwear">Bottomwear&nbsp;<span class="bi bi-chevron-down"></span></div>&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="bestseller">Bestseller&nbsp;<span class="bi bi-chevron-down"></span></div>&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="footwear">Footwear&nbsp;<span class="bi bi-chevron-down"></span></div>&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="accessories">Accessories&nbsp;<span class="bi bi-chevron-down"></span></div>
         </form>
-
-        <!-- Cart Icon Section -->
+        
+        <form action="" class="search10">
+            <span class="search2">Search</span>&nbsp;<span class="bi bi-search"></span>&nbsp;<input type="text"
+                name="txtSearch" placeholder="&nbsp;HUNT" class="search"></dd>
+        </form>
         <div class="bi bi-cart-fill"></div>
-
-        <!-- Additional Icons -->
-        <div class="additional-icons">
-            <span class="bi bi-heart-fill"></span>
-            <span class="bi bi-person-fill"></span>
-        </div>
     </header>
-     
+
     <main>
-        <marquee behavior="" direction="left">
+        <marquee behavior="" direction="">
             <div class="moto">
-                <p>"Unleash the Monster Within – Wear Your Favorite Creature!"</p>
+                <p> "Unleash the Monster Within – Wear Your Favorite Creature!"</p>
             </div>
         </marquee>
     </main>
-
-    <!-- <div class="slideshow-container">
+    <div class="slideshow-container">
         <div class="slides fade">
-            <img src="Photos/abcd1.png" alt="Slide 1" width="1250px" height="100px">
+            <img src="Photos/slideshow1.webp" alt="Slide 1" width="1250px" height="100px">
         </div>
         <div class="slides fade">
-            <img src="Photos/Backlogo.png" alt="Slide 2">
+            <img src="Photos/slideshow2.webp" alt="Slide 2">
         </div>
         <div class="slides fade">
-            <img src="Photos/Octo.jpg" alt="Slide 3">
-        </div> -->
+            <img src="Photos/slideshow3.webp" alt="Slide 3">
+        </div>
+        <div class="slides fade">
+            <img src="Photos/slideshow4.webp" alt="Slide 3">
+        </div>
+        <div class="slides fade">
+            <img src="Photos/slideshow5.webp" alt="Slide 3">
+        </div>
+        <div class="slides fade">
+            <img src="Photos/slideshow6.webp" alt="Slide 3">
+        </div>
+        <div class="slides fade">
+            <img src="Photos/F1.webp" alt="Slide 3">
+        </div>
 
         <!-- Navigation Buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -71,14 +73,20 @@
 
         function showSlides() {
             let slides = document.getElementsByClassName("slides");
+
+            // Hide all slides
             for (let i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
+
+            // Show the current slide
             slideIndex++;
             if (slideIndex > slides.length) {
                 slideIndex = 1;
             }
             slides[slideIndex - 1].style.display = "block";
+
+            // Call the function every 3 seconds for automatic slideshow
             setTimeout(showSlides, 3000);
         }
 
@@ -102,6 +110,7 @@
 
         // Initialize the slideshow
         showSlides();
+
     </script>
 
 </body>
