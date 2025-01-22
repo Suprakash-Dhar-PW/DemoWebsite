@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Monsters</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Logo Section -->
+        <img src="Photos/IAMDONE.gif" alt="Error" class="logo" >
+        
+        <div class="header-links">
+            <div class="winterwear">
+                Winterwear <span class=""></span>
+            </div>
+            <div class="topwear">
+                Topwear <span class=""></span>
+            </div>
+            <div class="bottomwear">
+                Bottomwear <span class=""></span>
+            </div>
+        </div>
+
+        <!-- Search Form Section -->
+        <form action="">
+            <span class="search2">Search</span>&nbsp;<span class="bi bi-search"></span>&nbsp;
+            <input type="text" name="txtSearch" placeholder="HUNT" class="search">
+        </form>
+
+        <!-- Cart Icon Section -->
+        <div class="bi bi-cart-fill"></div>
+
+        <!-- Additional Icons -->
+        <div class="additional-icons">
+            <span class="bi bi-heart-fill"></span>
+            <span class="bi bi-person-fill"></span>
+        </div>
+    </header>
+     
+    <main>
+        <marquee behavior="" direction="left">
+            <div class="moto">
+                <p>"Unleash the Monster Within – Wear Your Favorite Creature!"</p>
+            </div>
+        </marquee>
+    </main>
+
+    <!-- <div class="slideshow-container">
+        <div class="slides fade">
+            <img src="Photos/abcd1.png" alt="Slide 1" width="1250px" height="100px">
+        </div>
+        <div class="slides fade">
+            <img src="Photos/Backlogo.png" alt="Slide 2">
+        </div>
+        <div class="slides fade">
+            <img src="Photos/Octo.jpg" alt="Slide 3">
+        </div> -->
+
+        <!-- Navigation Buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000);
+        }
+
+        function plusSlides(n) {
+            showSlide(slideIndex += n);
+        }
+
+        function showSlide(n) {
+            let slides = document.getElementsByClassName("slides");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        // Initialize the slideshow
+        showSlides();
+    </script>
+
+</body>
+
+</html>

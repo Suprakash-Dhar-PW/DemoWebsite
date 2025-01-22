@@ -1,0 +1,183 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    /* color: white; */
+}
+
+body{
+    background-color: #121212;
+    line-height: 1.6;
+}
+
+
+/* Main Section Styling */
+main {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.moto {
+    font-size: 18px;
+    color: #ff9800;
+    font-style: italic;
+}
+
+.option{
+    display: flex;
+    flex-direction: row;
+}
+
+header .winterwear,
+header .topwear,
+header .bottomwear, 
+header .bestseller,
+header .footwear,
+header .accessories{
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    height: 20px;
+    margin-top: 30px;
+}
+
+header .winterwear:hover,
+header .topwear:hover,
+header .bottomwear:hover,
+header .bestseller:hover, 
+header .footwear:hover,
+header .accessories:hover {
+    color: #ff9800;
+}
+
+.bi-chevron-down{
+    font-size: 12px;
+    
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.slides {
+    display: none;
+    width: 100%;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+}
+
+.fade {
+    animation: fade 1.5s ease-in-out;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+header {
+    /* border: 1px solid red; */
+    background-color:  #333;;
+    display: flex;
+    flex-direction: row;
+    /* background-image: url(Photos/LoGOOOOOOOOOOOOOOO.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    position: sticky;
+    top: 0px;
+}
+.down{
+    height: 400px; 
+    overflow: hidden;
+    background-color: black;
+}
+
+.logo {
+    /* border: 2px solid red; */
+    background-image: url(Photos);
+    height:120px;
+    margin-top: -20px;
+    width: 200px;
+    /* background-color: blueviolet; */
+    
+}
+.search{
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+
+    
+}
+
+.search10{
+    margin-top: 29px;
+    margin-left: 20px;
+}
+
+.bi-search{
+    font-size: 15px;
+    color: white;
+}
+.search2{
+    color: white;
+    /* border: 2px solid green; */
+    font-size: 16px;
+}
+
+.moto{
+    
+    /* border: 1px solid black; */
+    width: 480px;  
+}
+marquee{
+    color: white;
+    font-weight: bold;
+}
+
+.bi-cart-fill{
+    color: white;
+}
+
+p{
+    /* border: 1px solid green; */
+    width: 524px;
+    
+}

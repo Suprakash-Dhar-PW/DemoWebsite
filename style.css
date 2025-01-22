@@ -1,0 +1,188 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background for the dark theme */
+    color: white;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    border-bottom: 3px solid #444;
+}
+
+header .logo {
+    height: 50px;
+}
+
+header div {
+    display: flex;
+    gap: 20px;
+}
+
+header .winterwear,
+header .topwear,
+header .bottomwear {
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+header .winterwear:hover,
+header .topwear:hover,
+header .bottomwear:hover {
+    color: #ff9800; /* A bright color for hover effect */
+}
+
+header form {
+    display: flex;
+    align-items: center;
+}
+
+header .search2 {
+    color: white;
+    font-size: 16px;
+}
+
+header .bi-search {
+    font-size: 20px;
+    color: white;
+}
+
+header .search {
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+}
+
+header .bi-cart-fill {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Main Section Styling */
+main {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.moto {
+    font-size: 18px;
+    color: #ff9800;
+    font-style: italic;
+}
+
+/* Slideshow Styling */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.slides {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header div {
+        flex-direction: column;
+    }
+
+    .search {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .slideshow-container {
+        width: 100%;
+    }
+
+    .prev, .next {
+        top: 10%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search2 {
+        font-size: 14px;
+    }
+
+    .winterwear, .topwear, .bottomwear {
+        font-size: 14px;
+    }
+}
+
+/* Logo Styling */
+header .logo {
+    height: 100px; /* Adjust this value to make the logo bigger or smaller */
+    width: auto; /* Keep the aspect ratio intact */
+}
+
