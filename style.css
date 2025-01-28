@@ -167,10 +167,19 @@ header {
     /* border: 1px solid black; */
     width: 480px;  
 }
-marquee{
-    color: white;
-    font-weight: bold;
+
+.moto p{
+    animation: scrollText 20s linear infinite;
 }
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+        transform: translateX(-100%); /* End off-screen to the left */
+    }
+}
+
 
 .bi-cart-fill{
     color: white;
@@ -180,4 +189,19 @@ p{
     /* border: 1px solid green; */
     width: 524px;
     
+}
+
+h2{ 
+    color: white;
+    border: 3px solid blue;
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.bi-cart-fill{
+    border: 1px solidd green;
+    margin-left: 90px;
+    font-size: 20px;
+    margin-top: 25px;
 }
