@@ -1,0 +1,33 @@
+header{
+    position:absolute;
+    background-color: #333;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+nav ul li{
+    list-style-type: none;
+    
+}
+
+
+.logo {
+    /* border: 2px solid red; */
+    background-image: url(Photos);
+    height:120px;
+    margin-top: -20px;
+    width: 200px;
+    /* background-color: blueviolet; */
+    
+}
+
+.button{
+    border: none;
+    background-color: #333;
+    color: white;
+}
+.button:hover{
+    color: rgb(248, 161, 63);
+
+}

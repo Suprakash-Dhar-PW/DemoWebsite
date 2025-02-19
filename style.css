@@ -169,7 +169,7 @@ header {
 }
 
 .moto p{
-    animation: scrollText 20s linear infinite;
+    animation: scrollText 15s linear infinite;
 }
 @keyframes scrollText {
     0% {
