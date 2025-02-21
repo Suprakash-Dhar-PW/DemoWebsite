@@ -8,6 +8,8 @@ header{
 }
 nav ul li{
     list-style-type: none;
+    display: inline-block;
+    border: 1px solid red;
     
 }
 
@@ -30,4 +32,10 @@ nav ul li{
 .button:hover{
     color: rgb(248, 161, 63);
 
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    
 }
